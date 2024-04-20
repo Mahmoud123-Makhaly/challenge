@@ -1227,8 +1227,8 @@ body {
 }
 
 .dark-mode {
-  background-color: rgb(30, 30, 30);
-  color: rgba(220, 220, 220, 0.1);
+  background-color: rgba(30, 30, 30, 0.5);
+  color: #fff;
 }
 
 .d_flex {
