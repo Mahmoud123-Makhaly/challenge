@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Minds Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <!-- start navbar -->
+    <div class="fixed-top py-4 nav_bar">
+      <div class="container d_flex justify-content-between">
+        <img src="images/navbar/menu.svg" class="pointer" />
+        <img
+          src="images/navbar/logo.png"
+          alt="logo"
+          class="d-none d-lg-block"
+        />
+        <div class="d_flex pointer">
+          <p class="d_flex main-color font-14" id="langSwitchButton">
+            <span> Arabic</span>
+
+            <img
+              class="ms-2"
+              src="images/navbar/translate.png"
+              alt="translate"
+            />
+          </p>
+          <div class="form-switch mx-2 d_flex justify-content-center mx-lg-4">
+            <input
+              class="form-check-input pointer"
+              onchange="handleDarkMode()"
+              type="checkbox"
+            />
+          </div>
+          <button
+            class="py-1 py-lg-2 btn gradient text-uppercase rounded-3 text-white"
+          >
+            <p class="d-none d-lg-inline-block fw-bold">Let's Talk</p>
+            <img src="images/navbar/Vector.svg" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- start banner -->
+    <div class="banner position-relative">
+      <div class="container">
+        <div
+          class="banner-content w-100 position-absolute start-50 top-50 translate-middle text-center"
+        >
+          <img src="images/banner/avater.png" alt="avatar" class="mb-3" />
+          <h1 class="fw-meduim mb-2 text-uppercase title">
+            we build <span class="apps">apps</span>
+          </h1>
+          <h1 class="fw-bold mb-2 text-uppercase title">that users love!</h1>
+          <p class="font-16 banner-desc m-auto">
+            We believe that we succeed when our clients succeed Which is why we
+            never stop learning
+          </p>
+          <div class="rounded-circle bg-white creative-box mt-5">
+            <img src="images/banner/creative.png" alt="creative" />
+          </div>
+        </div>
+      </div>
+      <p class="overlay py-4 text-uppercase">
+        We believe that we succeed when our clients succeed Which is why we
+        never stop learninWe believe that we succeed when our clients succeed
+        Which is why we never stop learnin
+      </p>
+    </div>
+
+    <!-- start works -->
+    <div class="works">
+      <div class="row p-0">
+        <div class="col-md-6 col-lg-3 p-0">
+          <div class="border py-5 px-5 text-center">
+            <h4 class="count font-48">410+</h4>
+            <p class="desc">Completed Projects</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 p-0">
+          <div class="border py-5 px-5 text-center">
+            <h4 class="count font-48" data-count="233">17+</h4>
+            <p class="desc">Winning Awards</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 p-0">
+          <div class="border py-5 px-5 text-center">
+            <h4 class="count font-48" data-count="233">233+</h4>
+            <p class="desc">Happy Clients</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 p-0">
+          <div class="border py-5 px-5 text-center">
+            <h4 class="count font-48" data-count="12">12+</h4>
+            <p class="desc">Countries Served</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- start features -->
+    <div class="features text-center">
+      <div class="row p-0">
+        <div class="col-md-6 col-lg-4 p-0">
+          <div class="border p-2">
+            <div
+              class="feat rounded py-5 px-4 position-relative overflow-hidden"
+            >
+              <div class="icon1 m-auto rounded-circle flex-center">
+                <img src="images/features/vector1.png" />
+              </div>
+              <p class="title my-3">Unique Designs</p>
+              <p class="desc">
+                We provide the best UI/UX Design by following the latest trends
+                of the market.
+              </p>
+              <img
+                src="images/features/layer.png"
+                alt="layer"
+                class="position-absolute layer"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 p-0">
+          <div class="border p-2">
+            <div
+              class="py-5 px-4 feat rounded p-5 position-relative overflow-hidden"
+            >
+              <div class="icon2 m-auto rounded-circle flex-center">
+                <img src="images/features/vector2.png" />
+              </div>
+              <p class="title my-3">Fitting Your Business</p>
+              <p class="desc">
+                We create and innovate, with us you can guarantee the highly
+                standards of inventions
+              </p>
+              <img
+                src="images/features/layer.png"
+                alt="layer"
+                class="position-absolute layer"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 p-0">
+          <div class="border border-top-0 p-2">
+            <div
+              class="p-5 feat rounded py-5 px-4 position-relative overflow-hidden"
+            >
+              <div class="icon3 m-auto rounded-circle flex-center">
+                <img src="images/features/vector3.png" />
+              </div>
+              <p class="title my-3">Fresh Ideas</p>
+              <p class="desc">
+                We provide the best UI/UX Design by following the latest trends
+                of the market.
+              </p>
+              <img
+                src="images/features/layer.png"
+                alt="layer"
+                class="position-absolute layer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  start about  -->
+    <div class="about my-5 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="images/about/about.png" alt="about" class="w_100" />
+          </div>
+          <div class="col-md-6">
+            <div class="about-info">
+              <p class="text-uppercase font-22 fw-bold secondary-color mb-3">
+                About us
+              </p>
+              <h2 class="who_we_are fw-bold font-50">
+                We Are More Than an Agency
+              </h2>
+              <p class="desc font-22 my-4">
+                We create and innovate, with us you can guarantee the highly
+                standards of inventions, We provide the best UI/UX Design by
+                following the latest trends of the market.
+              </p>
+              <ul class="list-unstyled mb-4">
+                <li class="d_flex">
+                  <img src="images/about/Check.svg" alt="check" />
+                  <p class="font-20 ms-1">Fresh Ideas For Your Projects.</p>
+                </li>
+                <li class="d_flex my-3">
+                  <img src="images/about/Check.svg" alt="check" />
+                  <p class="font-20 ms-1">
+                    Unique Designs That Will Like Your Clients
+                  </p>
+                </li>
+                <li class="d_flex">
+                  <img src="images/about/Check.svg" alt="check" />
+                  <p class="font-20 ms-1">
+                    Fitting Your Business Size and Budget.
+                  </p>
+                </li>
+              </ul>
+              <button
+                class="py-1 py-lg-2 btn gradient text-uppercase rounded-3 text-white"
+              >
+                <span class="fw-bold">Let's Talk</span>
+
+                <img src="images/navbar/Vector.svg" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- start delivery -->
+    <div class="delivering text-center">
+      <h4 class="font-22 text-uppercase secondary-color mb-3">Delivering</h4>
+      <p class="font-37 fw-bold" style="line-height: 1.2em">
+        Your Project With The Newest <br />Technologies Used
+      </p>
+      <div class="owl-carousel owl-theme my-3" id="owl-carousel">
+        <div class="item mx-2 rounded bg-white _shadow px-5 py-4">
+          <img src="images/delivery/nav1.svg" alt="nav1" height="60" />
+        </div>
+        <div class="item mx-2 rounded bg-white _shadow px-5 py-4">
+          <img src="images/delivery/nav2.svg" alt="nav1" height="60" />
+        </div>
+        <div class="item mx-2 rounded bg-white _shadow px-5 py-4">
+          <img src="images/delivery/nav3.svg" alt="nav1" height="60" />
+        </div>
+        <div class="item mx-2 rounded bg-white _shadow px-5 py-4">
+          <img src="images/delivery/nav4.svg" alt="nav1" height="60" />
+        </div>
+        <div class="item mx-2 rounded bg-white _shadow px-5 py-4">
+          <img src="images/delivery/nav5.svg" alt="nav1" height="60" />
+        </div>
+        <div class="item mx-2 rounded bg-white _shadow px-5 py-4">
+          <img src="images/delivery/nav1.svg" alt="nav1" height="60" />
+        </div>
+        <div class="item mx-2 rounded bg-white _shadow px-5 py-4">
+          <img src="images/delivery/nav7.svg" alt="nav1" height="60" />
+        </div>
+        <div class="item mx-2 rounded bg-white _shadow px-5 py-4">
+          <img src="images/delivery/nav1.svg" alt="nav1" height="60" />
+        </div>
+        <div class="item mx-2 rounded bg-white _shadow px-5 py-4">
+          <img src="images/delivery/nav2.svg" alt="nav1" height="60" />
+        </div>
+        <div class="item mx-2 rounded bg-white _shadow px-5 py-4">
+          <img src="images/delivery/nav3.svg" alt="nav1" height="60" />
+        </div>
+      </div>
+    </div>
+    <!-- start creative section -->
+
+    <!-- start creative section -->
+    <div class="creative py-5">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="d-flex flex-column flex-lg-row justify-content-between">
+            <div>
+              <h3 class="font-22 secondary-color mb-2">
+                CREATIVE AND TALENTED
+              </h3>
+              <h2 class="font-37 light-primary">We Work On Different Fields</h2>
+            </div>
+            <div class="my-3 my-lg-0">
+              <button
+                class="py-1 py-lg-2 btn gradient text-uppercase rounded-3 text-white"
+              >
+                <span class="fw-bold">Let's Talk</span>
+                <img src="images/navbar/Vector.svg" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home"
+              type="button"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+            >
+              Development
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#profile"
+              type="button"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+            >
+              Digital Marketing
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#contact"
+              type="button"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+            >
+              Creative Design
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content pt-5 text-center" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c1.svg" alt="c1" />
+                  </div>
+                  <h3>Android Apps</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c2.svg" alt="c1" />
+                  </div>
+                  <h3>IOS Apps</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c3.svg" alt="c1" />
+                  </div>
+                  <h3>PHP</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c4.svg" alt="c1" />
+                  </div>
+                  <h3>WordPress</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c5.svg" alt="c1" />
+                  </div>
+                  <h3>React JS</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c6.svg" alt="c1" />
+                  </div>
+                  <h3>VR</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c1.svg" alt="c1" />
+                  </div>
+                  <h3>Android Apps</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c2.svg" alt="c1" />
+                  </div>
+                  <h3>IOS Apps</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c3.svg" alt="c1" />
+                  </div>
+                  <h3>PHP</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c4.svg" alt="c1" />
+                  </div>
+                  <h3>WordPress</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c5.svg" alt="c1" />
+                  </div>
+                  <h3>React JS</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c6.svg" alt="c1" />
+                  </div>
+                  <h3>VR</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="contact"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          >
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c1.svg" alt="c1" />
+                  </div>
+                  <h3>Android Apps</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c2.svg" alt="c1" />
+                  </div>
+                  <h3>IOS Apps</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c3.svg" alt="c1" />
+                  </div>
+                  <h3>PHP</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c4.svg" alt="c1" />
+                  </div>
+                  <h3>WordPress</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c5.svg" alt="c1" />
+                  </div>
+                  <h3>React JS</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="category p-5 _shadow d-flex flex-column gap-3 align-items-center"
+                >
+                  <div class="rounded-circle icon flex-center">
+                    <img src="images/creative/c6.svg" alt="c1" />
+                  </div>
+                  <h3>VR</h3>
+                  <p class="desc">
+                    We provide the best UI/UX Design by following the latest.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- start portfolio -->
+    <div class="portflio pt-5 m-auto">
+      <div class="text-center mb-3">
+        <h3 class="font-22 secondary-color">OUR PORTFOLIO</h3>
+        <h2 class="font-37 title">Latest Projects Have Been Done</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div>
+            <div class="p-4 px-5 border-bottom">
+              <img src="images/portflio/tax.png" alt="tex" />
+              <div class="d_flex desc mt-3">
+                <p class="skills">Vat Services <span class="mx-3">/</span></p>
+                <span>ANDROID & IOS</span>
+              </div>
+            </div>
+            <div class="p-4 px-5 border-bottom flex-between">
+              <div>
+                <img src="images/portflio/img2.png" alt="tex" />
+                <div class="d_flex desc mt-3">
+                  <p class="skills">Breeze <span class="mx-3">/</span></p>
+                  <span>ANDROID & IOS</span>
+                </div>
+              </div>
+              <div class="icon rounded-circle flex-center pointer">
+                <img src="images/portflio/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="p-4 px-5 border-bottom mb-5">
+              <img src="images/portflio/img3.png" alt="tex" />
+              <div class="d_flex desc mt-3">
+                <p class="skills">HIV Academy <span class="mx-3">/</span></p>
+                <span>ANDROID & IOS</span>
+              </div>
+            </div>
+            <div class="p-5">
+              <button
+                class="py-1 py-lg-2 btn gradient text-uppercase rounded-3 text-white px-4"
+              >
+                <span class="fw-bold">view all</span>
+                <img src="images/navbar/Vector.svg" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 position-relative">
+          <div class="text-center">
+            <img
+              src="images/portflio/mobile.png"
+              alt="mobile"
+              class="start-50 bottom-0 position-absolute translate-middle-x d-none d-lg-block"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- start our partners -->
+    <div class="partners my-5">
+      <div class="container mb-4">
+        <h3 class="secondary-color font-22 py-3 border-bottom">our partners</h3>
+        <div class="my-4 flex-between flex-wrap gap-4">
+          <div><img src="images/partners/p1.png" alt="p1" /></div>
+
+          <div><img src="images/partners/p2.png" alt="p2" /></div>
+          <div><img src="images/partners/p3.png" alt="p3" /></div>
+          <div><img src="images/partners/p4.png" alt="p4" /></div>
+          <div><img src="images/partners/p5.png" alt="p4" /></div>
+        </div>
+      </div>
+    </div>
+    <!-- start hoisting -->
+    <div class="hoisting m-auto text-center py-5">
+      <h4 class="secondary-color font-22 mb-3">need a Web hosting</h4>
+      <h3 class="font-37 text-white mb-4">
+        50% Off On Any Shared Hosting Packages
+      </h3>
+      <button
+        class="mb-4 py-1 py-lg-2 btn gradient text-uppercase rounded-3 text-white px-4"
+      >
+        <span class="fw-bold">MORE DETAILS</span>
+        <img src="images/navbar/Vector.svg" />
+      </button>
+    </div>
+    <!--start  testimonials -->
+    <div class="testimonials py-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="p-5">
+            <h4 class="text-uppercase mb-2 font-22 secondary-color">
+              testimonials
+            </h4>
+            <h3 class="font-37 title mb-4">
+              Our Success <br />
+              Stories!
+            </h3>
+            <button
+              class="mb-4 py-1 py-lg-2 btn gradient text-uppercase rounded-3 text-white px-4"
+            >
+              <span class="fw-bold">MORE DETAILS</span>
+              <img src="images/navbar/Vector.svg" />
+            </button>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="testimonials owl-carousel owl-theme my-3">
+            <div class="item test-item py-4 px-3 position-relative">
+              <h3 class="font-22 mb-4 text-white">
+                Great company and great team thanks a lot !
+              </h3>
+              <p class="desc font-13">
+                Dico is finally addressing a long time problem we had when
+                building UIs. It’s ease of use and workflow seems really
+                intuitive. Promising! Dico is finally addressing a long time
+                problem
+              </p>
+              <div class="mt-5 d-flex flex-column align-items-center">
+                <img
+                  src="images/hoisting/person.png"
+                  alt="person"
+                  class="mb-3 test-img"
+                />
+                <h4 class="font-18 fw-semibold name">Martin Goutry</h4>
+                <p class="job">Web Developer</p>
+              </div>
+              <img
+                src="images/testimoinals/Quote Icon.svg"
+                alt="Quote"
+                width="100"
+                height="100"
+                class="position-absolute Quote w-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- start out team -->
+    <div class="our-team my-5 py-4">
+      <div class="text-center mb-4 overlay py-4">
+        <h4 class="font-22 secondary-color">OUR TEAM</h4>
+        <p class="font-37 title fw-bold">Creative And Talented</p>
+      </div>
+      <div class="team owl-carousel owl-theme my-3">
+        <div class="item py-4 px-3 text-center">
+          <img src="images/team/employee.png" alt="employee" class="mb-4" />
+          <h3 class="name">M.ATEF</h3>
+          <p class="font-14 secondary-color font-14">UI UX Designer</p>
+        </div>
+        <div class="item py-4 px-3 text-center">
+          <img src="images/team/employee.png" alt="employee" class="mb-4" />
+          <h3 class="name">M. GADO</h3>
+          <p class="font-14 secondary-color font-14">UI UX Designer</p>
+        </div>
+        <div class="item py-4 px-3 text-center">
+          <img src="images/team/employee.png" alt="employee" class="mb-4" />
+          <h3 class="name">Mohamed Yaser</h3>
+          <p class="font-14 secondary-color font-14">UI UX Designer</p>
+        </div>
+        <div class="item py-4 px-3 text-center">
+          <img src="images/team/employee.png" alt="employee" class="mb-4" />
+          <h3 class="name">Mohamed Yaser</h3>
+          <p class="font-14 secondary-color font-14">UI UX Designer</p>
+        </div>
+        <div class="item py-4 px-3 text-center">
+          <img src="images/team/employee.png" alt="employee" class="mb-4" />
+          <h3 class="name">M.ATEF</h3>
+          <p class="font-14 secondary-color font-14">UI UX Designer</p>
+        </div>
+      </div>
+    </div>
+    <!-- around world -->
+    <div class="around-world my-5">
+      <div class="text-center mb-4">
+        <h4 class="font-22 secondary-color">AROUND TH WORLD!</h4>
+        <p class="font-37 title fw-bold title">
+          Look around you we are every where!
+        </p>
+      </div>
+      <div id="map"></div>
+    </div>
+    <!--start  Subscribe -->
+    <div class="container">
+      <div
+        class="subscribe p-3 p-md-5 d-flex flex-column gap-4 flex-lg-row justify-content-between"
+      >
+        <p class="font-37 text">Subscribe Newsletters</p>
+        <form class="d-flex bg-white p-2 rounded border flex-grow-1">
+          <input
+            class="form-control border-0"
+            placeholder="Enter your email"
+            type="text"
+          />
+          <input
+            type="submit"
+            value="subscribe now"
+            class="text-white rounded text-uppercase font-14 px-3 py-2"
+          />
+        </form>
+      </div>
+    </div>
+    <!-- start footer -->
+    <div class="footer mt-5">
+      <div
+        class="container border-bottom d-flex flex-column flex-lg-row justify-content-between py-3"
+      >
+        <ul class="list-unstyled d_flex gap-lg-4 gap-3 flex-wrap">
+          <li><a href="#" class="text-decoration-none link">Home</a></li>
+          <li><a href="#" class="text-decoration-none link">About Us</a></li>
+          <li><a href="#" class="text-decoration-none link">Services</a></li>
+          <li><a href="#" class="text-decoration-none link">Portfolio</a></li>
+          <li>
+            <a href="#" class="text-decoration-none link">Web Hosting</a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none link">Testimonials</a>
+          </li>
+        </ul>
+        <ul class="list-unstyled d_flex gap-5">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-vimeo-v fa-lg"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- start copy right -->
+    <div class="copy-right py-4">
+      <div class="container">
+        <div
+          class="flex-column d-flex flex-lg-row gap-4 text-center justify-content-lg-between align-items-center"
+        >
+          <p class="desc font-13">
+            &copy; 2023 Creative Minds. All rights reserved.
+          </p>
+          <img src="images/navbar/logo.png" alt="logo" />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main_en.js"></script>
+  </body>
+</html>
